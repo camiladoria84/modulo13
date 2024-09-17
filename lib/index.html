@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+
+        
+
+        .bg-dark {
+            background-color: #d1c090!important;
+
+        }
+
+        .navbar {
+        
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: .2rem;
+            padding-bottom: .2rem;
+        }
+
+        section {
+            background-color: #d1c090;
+            padding: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #a54564;
+        }
+
+        .nav-link {
+            color: #a54564;
+        }
+
+        .card-body {
+            color: #a54564;
+        }
+
+        .btn {
+            background-color: #a54564 ;
+            color:#fbb672
+            
+        }
+
+
+        .card {
+            background-color: #d1c090;
+            margin-bottom: 16px;
+            display: flex;
+        }
+
+        .contato {
+            display: inline-grid;;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <section>
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg bg-dark fixed-top">
+                <div class="container cabecalho">
+                    <h1>O BLOG DAS FLORES</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">SOBRE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#flores">FLORES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">CONTATO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2021/07/18/18/35/poppies-6476322_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Papoula</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/19/05/31/flower-7861942_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Tulipa</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/08/01/08/17/dahlia-8936439_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Dália</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho"></div>
+        <section id="sobre">
+            <h1>SOBRE</h1>
+            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo iste placeat eligendi optio blanditiis corrupti labore nobis voluptatem repellendus soluta dolorum autem iure animi, dolor est ea error inventore deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptate dicta iusto exercitationem repudiandae laborum pariatur sed sunt quae modi corporis enim temporibus ex, est adipisci aliquid, libero obcaecati doloribus!
+            </h5>
+        </section>
+        <section id="container flores">
+            <h1>FLORES</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2018/10/05/21/04/dahlia-3726844_1280.jpg" class="card-img-top" alt="dalia">
+                        <div class="card-body">
+                            <h5 class="card-title">Dália</h5>
+                            <p class="card-text"> Descubra o mundo das dálias</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/08/10/08/tulips-2048324_1280.jpg" class="card-img-top" alt="tulipa">
+                        <div class="card-body">
+                            <h5 class="card-title">Tulipa</h5>
+                            <p class="card-text"> Descubra o mundo das tulipas</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2024/07/15/21/46/daylily-8897976_1280.jpg" class="card-img-top" alt="lirio">
+                        <div class="card-body">
+                            <h5 class="card-title">Lírio</h5>
+                            <p class="card-text"> Descubra o mundo dos lírios</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2023/04/05/09/17/spring-7901015_1280.jpg" class="card-img-top" alt="flor de cerejeira">
+                        <div class="card-body">
+                            <h5 class="card-title">Sakura</h5>
+                            <p class="card-text"> Descubra o mundo das sakuras</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2021/06/21/09/10/poppy-6353123_1280.jpg" class="card-img-top" alt="papaula">
+                        <div class="card-body">
+                            <h5 class="card-title">Papoula</h5>
+                            <p class="card-text"> Descubra o mundo das papoulas</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2024/08/19/15/01/sunflowers-8980921_1280.jpg" class="card-img-top" alt="girassois">
+                        <div class="card-body">
+                            <h5 class="card-title">Girassol</h5>
+                            <p class="card-text"> Descubra o mundo dos girassóis</p>
+                            <a href="#" class="btn btn-md">Saiba mais</a>
+                        </div>    
+                    </div>
+                </div>
+                
+            
+            </div>
+
+            
+        </section>
+        <section id="contato">
+            <h1>CONTATO</h1>
+            <h5>Gostou do nosso conteúdo ou ficou com algumas dúvida? Fala com a gente!</h5>
+            <div>
+                <div class="row">       
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Nome completo" required>
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                                        <textarea id="textarea" class="form-control" placeholder="Sua mensagem" required></textarea>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label">As informações acima são verdadeiras.</label>
+                                    </div>
+                                    <button type="reset" class="btn btn-md">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Blog das flores - Todos os direitos reservados - 2024
+                </p>
+            </div>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
